@@ -1,0 +1,69 @@
+<html>
+<style>
+  body, .focus-color {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+  }
+  h1, h2 {
+    font-family:sans-serif;
+    font-size: 18px;
+    margin: 20px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+  .swatch {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+  }
+  .canvas {
+    background: #fdfcff;
+    border: 1px solid #eee;
+    margin: 20px;
+    padding: 40px;
+  }
+  .wheel {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: conic-gradient(
+      #FE2712 0deg 30deg,
+      #FC600A 30deg 60deg,
+      #FB9902 60deg 90deg,
+      #FCCC1A 90deg 120deg,
+      #FEFE33 120deg 150deg,
+      #B2D732 150deg 180deg,
+      #66B032 180deg 210deg,
+      #347C98 210deg 240deg,
+      #0247FE 240deg 270deg,
+      #4424D6 270deg 300deg,
+      #8601AF 300deg 330deg,
+      #C21460 330deg 360deg
+    );
+    border-radius:100%;
+  }
+  .focus-color {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    border-radius:100%;
+    background: #fff;
+  }
+</style>
+<body>
+  <h1>Hue Saturation Charts</h1>
+  <h2>Color 126: Fall 2026<br/>Eugene Goldin</h2>
+  <div id="canvas" class="canvas"></div>
+  <div id="wheel" class="wheel"></div>
+  <div id="focus-color" class="focus-color"></div>
+  <script src="script.js"></script>
+</body>
+</html>
